@@ -12,11 +12,11 @@ for k = 1:length(wartosci_m)
     a = wartosci_m(k);
     pierwiastki = roots ([a, a.^2 - 1, 5, 7]) ;
 
-   
+   z=0
 
     for pierwiastek = pierwiastki
         if isreal(pierwiastek)
-            z=k+1;
+            z=z+1;
         end
     end
 
